@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="motoman_sia5f_arm">
   
 	<xacro:property name="deg" value="0.017453293" /> 
-  <xacro:property name="joint_damping" value="10" />
+  <xacro:property name="joint_damping" value="1.0" />
 
   <link name="base_link">
     <visual>
@@ -49,7 +49,7 @@
     <parent link="base_link" />
     <child link="link_s" />
     <axis xyz="0 0 1" />
-    <limit lower="${-180*deg}" upper="${180*deg}" effort="0" velocity="${200*deg}" />
+    <limit lower="${-180.0*deg}" upper="${180.0*deg}" effort="0" velocity="${200.0*deg}" />
     <dynamics damping="${joint_damping}" />
   </joint>
 
