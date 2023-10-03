@@ -18,9 +18,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="400"/>
-      <!-- Arbitrarily large value, to simulate bolting down in case of absence of fixed joint -->
-      <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      <!-- <origin rpy="0 0 0" xyz="-0.025918 -0.000376 0.076105"/> -->
+      <mass value="9.23913043478"/>
+      <inertia ixx="0.0378685009058" ixy="0" ixz="0" iyy="0.0465867830616" iyz="0" izz="0.0514065294384"/>
     </inertial>
   </link>
   
@@ -38,9 +38,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="13.746057"/>
-      <inertia ixx="0.070027808" ixy="0.0" ixz="0.0" iyy="0.077808312" iyz="0.0" izz="0.043654657"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0046451930 -0.018976267"/>
+      <mass value="8.36956521739"/>
+      <inertia ixx="0.1285284" ixy="0" ixz="0" iyy="0.127697251956" iyz="0" izz="0.0186623672464"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0046451930 -0.018976267"/>
     </inertial>
   </link>
   
@@ -50,7 +50,7 @@
     <child link="link_s" />
     <axis xyz="0 0 1" />
     <limit lower="${-180.0*deg}" upper="${180.0*deg}" effort="0" velocity="${200.0*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
 
   <link name="link_l">
@@ -67,9 +67,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="5.227999"/>
-      <inertia ixx="0.016063413" ixy="0.0" ixz="0.0" iyy="0.10522920" iyz="0.0" izz="0.10250891"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.11422130 0.0 0.018935113"/>
+      <mass value="7.60869565217"/>
+      <inertia ixx="0.12248884058" ixy="0" ixz="0" iyy="0.117554616667" iyz="0" izz="0.0177495804348"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.11422130 0.0 0.018935113"/>
     </inertial>
   </link>
   
@@ -79,8 +79,8 @@
     <child link="link_l" />
     <axis xyz="0 1 0" />
     <limit lower="${-110*deg}" upper="${110*deg}" effort="0" velocity="${200*deg}" />
-    <dynamics damping="${joint_damping}" />
-  </joint>
+    <dynamics damping="0.7" friction="0.7"/>
+    </joint>
 
   <link name="link_e">
     <visual>
@@ -96,9 +96,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="4.7092004"/>
-      <inertia ixx="0.030190273" ixy="0.0" ixz="0.0" iyy="0.030943336" iyz="0.0" izz="0.0096760191"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.011901001 -0.036023969"/>
+      <mass value="1.30434782609"/>
+      <inertia ixx="0.0122899381739" ixy="0" ixz="0" iyy="0.0117127787826" iyz="0" izz="0.00344401234783"/>
+   <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.011901001 -0.036023969"/>
     </inertial>
   </link>
   
@@ -108,7 +108,7 @@
     <child link="link_e" />
     <axis xyz="0 0 1" />
     <limit lower="${-170*deg}" upper="${170*deg}" effort="0" velocity="${200*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
   
   <link name="link_u">
@@ -125,9 +125,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="3.1488649"/>
-      <inertia ixx="0.083840132" ixy="0.0" ixz="0.0" iyy="0.0061641860" iyz="0.0" izz="0.083291837"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.015659426 0.13525753"/>
+      <mass value="1.08695652174"/>
+      <inertia ixx="0.0110207115768" ixy="0" ixz="0" iyy="0.00996803594202" iyz="0" izz="0.00214043853333"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.015659426 0.13525753"/>
     </inertial>
   </link>
   
@@ -137,7 +137,7 @@
     <child link="link_u" />
     <axis xyz="0 -1 0" />
     <limit lower="${-90*deg}" upper="${115*deg}" effort="0"  velocity="${200*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
 
   <link name="link_r">
@@ -154,9 +154,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="3.0270943"/>
-      <inertia ixx="0.017471059" ixy="0.0" ixz="0.0" iyy="0.017175292" iyz="0.0" izz="0.0049008824"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.011271807 -0.0416"/>
+      <mass value="0.978260869565"/>
+      <inertia ixx="0.0108400832201" ixy="0" ixz="0" iyy="0.010708873981" iyz="0" izz="0.00140456861413"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.0 -0.011271807 -0.0416"/>
     </inertial>
   </link>
   
@@ -166,7 +166,7 @@
     <child link="link_r" />
     <axis xyz="-1 0 0" />
     <limit lower="${-90*deg}" upper="${90*deg}" effort="0" velocity="${200*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
 
   <link name="link_b">
@@ -183,9 +183,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="2.3902999"/>
-      <inertia ixx="0.080" ixy="0.0" ixz="0.0" iyy="0.0038377449" iyz="0.0" izz="0.080"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0074364051 0.078721289"/>
+      <mass value="0.869565217391"/>
+      <inertia ixx="0.00814341869565" ixy="0" ixz="0" iyy="0.00709473869565" iyz="0" izz="0.000736577391304"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0074364051 0.078721289"/>
     </inertial>
   </link>
   
@@ -195,7 +195,7 @@
     <child link="link_b" />
     <axis xyz="0 -1 0" />
     <limit lower="${-110*deg}" upper="${110*deg}" effort="0" velocity="${230*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
 
   <link name="link_t">
@@ -212,9 +212,9 @@
       </geometry>
     </collision>
     <inertial>
-      <mass value="0.63670412"/>
-      <inertia ixx="0.00058471221" ixy="0.0" ixz="0.0" iyy="0.0005929671" iyz="0.0" izz="0.001081389"/>
-      <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
+      <mass value="0.54347826087"/>
+      <inertia ixx="0.003" ixy="0" ixz="0" iyy="0.003" iyz="0" izz="0.001"/>
+     <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
     </inertial>
   </link>
   
@@ -224,7 +224,7 @@
     <child link="link_t" />
     <axis xyz="-1 0 0" />
     <limit lower="${-90*deg}" upper="${90*deg}" effort="0" velocity="${350*deg}" />
-    <dynamics damping="${joint_damping}" />
+    <dynamics damping="0.7" friction="0.7"/>
   </joint>
   
   <link name="tool0" />
@@ -233,9 +233,81 @@
     <origin xyz="0.011 0 0" rpy="${-90*deg} ${-90*deg} ${-90*deg}"/>
     <parent link="link_t" />
     <child link="tool0" />
-    <!-- <dynamics damping="${joint_damping}" /> -->
   </joint> 
-  
+
+
+  <!-- transmission -->
+  <!-- transmission -->
+  <transmission name="transmission_s">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_s">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_s">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>300</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_l">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_l">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_l">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>300</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_e">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_e">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_e">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>100</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_u">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_u">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_u">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>50</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_r">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_r">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_r">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>30</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_b">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_b">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_b">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>30</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="transmission_t">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint_t">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor_t">
+      <hardwareInterface>PositionJointInterface</hardwareInterface>
+      <mechanicalReduction>10</mechanicalReduction>
+    </actuator>
+  </transmission>  
 
 
 </robot>
