@@ -8,13 +8,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/base.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/base.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/base.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/base.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -28,13 +28,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_s.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_s.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_s.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_s.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -57,13 +57,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_l.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_l.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_l.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_l.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -86,13 +86,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_e.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_e.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_e.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_e.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -115,13 +115,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_u.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_u.dae"/>
       </geometry>
     </visual>
     <collision>axis
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_u.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_u.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -144,13 +144,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_r.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_r.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_r.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_r.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -173,13 +173,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_b.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_b.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_b.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_b.dae"/>
       </geometry>
     </collision>
     <inertial>
@@ -202,13 +202,13 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/visual/link_t.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/visual/link_t.dae"/>
       </geometry>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file://$(find yaskawa_description)/meshes/collision/link_t.dae"/>
+        <mesh filename="file://$(find yaskawa_description_ros2)/meshes/collision/link_t.dae"/>
       </geometry>
     </collision>
     <inertial>

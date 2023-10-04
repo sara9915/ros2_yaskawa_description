@@ -8,12 +8,12 @@ from launch_ros.actions import Node
 
 
 def generate_launch_description():
-    yaskawa_xacro_file = os.path.join(get_package_share_directory('yaskawa_description'), 'robots',
+    yaskawa_xacro_file = os.path.join(get_package_share_directory('yaskawa_description_ros2'), 'robots',
                                      'sia5f_arm.xacro')
     robot_description = Command(
         [FindExecutable(name='xacro'), ' ', yaskawa_xacro_file])
 
-    rviz_file = os.path.join(get_package_share_directory('yaskawa_description'), 'rviz',
+    rviz_file = os.path.join(get_package_share_directory('yaskawa_description_ros2'), 'rviz',
                              'visualize_yaskawa.rviz')
 
     return LaunchDescription([
