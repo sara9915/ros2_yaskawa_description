@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="motoman_sia5f">
     <gazebo>
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
-            <parameters>$(find gazebo_simulation)/config/controllers.yaml</parameters>
+            <parameters>$(find gazebo_simulation_ros2)/config/controllers.yaml</parameters>
             
         </plugin>
     </gazebo>
