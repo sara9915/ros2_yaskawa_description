@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>yaskawa_description</name>
+  <name>yaskawa_description_ros2</name>
   <version>0.0.0</version>
   <description>Yaskawa description contains URDF files and meshes of yaskawa robots</description>
   <maintainer email="sara.federico99@hotmail.it">sara</maintainer>
